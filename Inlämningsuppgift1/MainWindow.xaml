@@ -1,0 +1,182 @@
+﻿<Window x:Class="Inlämningsuppgift1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inlämningsuppgift1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="370" Width="525">
+
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Grid Background="Aqua" DockPanel.Dock="Top" Height="40">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="5">
+                    <Label Content="Meny" Height="25" Padding="5 5 5 5" HorizontalAlignment="Left"></Label>
+                    <ComboBox SelectionChanged="cmbMeny_SelectionChanged" x:Name="cmbMeny">
+                        <ComboBoxItem Content="Rensa">
+                            
+                        </ComboBoxItem>
+                        <ComboBoxItem Content="Avsluta">
+                            
+                        </ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="6" Height="40">
+                    <Label Content="Color" HorizontalAlignment="Right" Width="60"></Label>
+                    <ComboBox x:Name="cmbColors" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Right" Height="20" Width="60" Margin="0,0,0.4,0">
+                        <ComboBoxItem Background="CornflowerBlue" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="CornflowerBlue"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="CornflowerBlue" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Blue" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Blue"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Blue" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Navy" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Navy"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Navy" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="BlueViolet" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="BlueViolet"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="BlueViolet" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Purple" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Purple"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Purple" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="DarkRed" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="DarkRed"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="DarkRed" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Firebrick" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Firebrick"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Firebrick" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Red" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="red"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="red" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="OrangeRed" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="OrangeRed"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="OrangeRed" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Orange" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Orange"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Orange" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Yellow" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Yellow"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Yellow" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="GreenYellow" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="GreenYellow"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="GreenYellow" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Lime" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Lime"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Lime" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="Green" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="Green"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="Green" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem Background="SeaGreen" Height="20">
+                            <DockPanel>
+                                <Rectangle Width="20" Height="20" Fill="SeaGreen"></Rectangle>
+                                <Label Padding="1" FontSize="10" Content="SeaGreen" Width="70"/>
+                            </DockPanel>
+                        </ComboBoxItem>
+
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="7" Height="40">
+                    <Button x:Name="ChangeText" Click="ChangeText_Click" HorizontalAlignment="Center" Content=" Change Text" Height="25"></Button>
+                    <TextBox x:Name="textToChange" Width="70"></TextBox>
+                </StackPanel>
+            </Grid>
+            <Grid DockPanel.Dock="Left" Width="60">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
+                </Grid.RowDefinitions>
+                <DockPanel Background="Transparent" x:Name="dockPanelRectangle" Grid.Row="0" LastChildFill="True" MouseDown="dockPanelRectangle_MouseDown">
+                    <Rectangle Height="30" Fill="Red" Margin="5 5 5 5" Grid.Row="0" DockPanel.Dock="Top">
+                    </Rectangle>
+                    <Label Content="Rektangle" FontSize="12" HorizontalAlignment="Center" Padding="2 2 2 2"></Label>
+                </DockPanel>
+                <DockPanel Background="Transparent" x:Name="dockPanelEllipse" Grid.Row="1" LastChildFill="True" MouseDown="dockPanelEllipse_MouseDown">
+                    <Ellipse Height="30" Fill="Green" Margin="5 5 5 5" Grid.Row="0" DockPanel.Dock="Top"></Ellipse>
+                    <Label Content="Ellipse" FontSize="12" HorizontalAlignment="Center" Padding="2 2 2 2"></Label>
+                </DockPanel>
+                <DockPanel Background="Transparent" x:Name="dockPanelDiamond" Grid.Row="2" LastChildFill="True" MouseDown="dockPanelDiamond_MouseDown" HorizontalAlignment="Left" Width="60">
+                    <Polygon Fill="Blue" HorizontalAlignment="Center" DockPanel.Dock="Top" Points="25,0 50,20 25,40 0,20" ></Polygon>
+                    <Label Content="Diamond" FontSize="12" HorizontalAlignment="Center" Padding="2 2 2 2"></Label>
+                </DockPanel>
+                <DockPanel x:Name="dockPanelLine" Background="Transparent" Grid.Row="2" LastChildFill="True" MouseDown="dockPanelLine_MouseDown" Margin="-2,55,2,5" Grid.RowSpan="2">
+                    <Line Height="30" Width="40" X1="5" Y1="5" X2="30" Y2="20" StrokeThickness="6" Stroke="Black" StrokeStartLineCap="Flat" StrokeEndLineCap="Triangle" DockPanel.Dock="Top">
+                    </Line>
+                    <Label Content="Line" FontSize="12" HorizontalAlignment="Center" Padding="2 2 2 2"></Label>
+                </DockPanel>
+                <!--<DockPanel Background="Transparent" x:Name="dockPanelRomb" Grid.Row="3" LastChildFill="True" MouseDown="dockPanelRomb_MouseDown">
+                    <Rectangle Height="30" Width="40" Fill="Purple" Margin="5 5 5 5" Grid.Row="0" DockPanel.Dock="Top">
+                        <Rectangle.RenderTransform>
+                            <SkewTransform AngleX ="-20" AngleY ="0" CenterX="20" CenterY="15"/>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Label Content="Romb" FontSize="12" HorizontalAlignment="Center" Padding="2 2 2 2"></Label>
+                </DockPanel>-->
+
+            </Grid>
+            <Canvas Background="Snow" x:Name="canvasBoard" MouseMove="canvasBoard_MouseMove" MouseDown="AddUIControl" ContextMenuOpening="canvasBoard_ContextMenuOpening">
+                <Canvas.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Delete" Click="MenuItem_Click">
+                        </MenuItem>
+                    </ContextMenu>
+                </Canvas.ContextMenu>
+            </Canvas>
+
+        </DockPanel>
+    </Grid>
+</Window>
